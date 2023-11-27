@@ -1,0 +1,77 @@
+Question no 3 ;
+console.log(countryname);
+
+
+var request  = new XMLHttpRequest();
+request.open("Git",https://restcountries.com/v3.1/all);
+request.send ();
+request.onload=function(){
+    var result =JSON.parse(request.response);
+    console.log(result);
+    for (var i=0;i<result.length, i++){
+        var countryname= result[i].countryname;
+        console.log(countryname)
+    }
+}
+
+
+
+Question no 3.1 ;
+console.log(Regions);
+
+
+var request  = new XMLHttpRequest();
+request.open("Git",https://restcountries.com/v3.1/all);
+request.send ();
+request.onload=function(){
+    var result =JSON.parse(request.response);
+    console.log(result);
+    for (var i=0;i<result.length, i++){
+        var regions = result[i].regions;
+        console.log(regions)
+    }
+}
+
+
+
+
+Question no 3.2 ;
+console.log(subRegions);
+
+
+var request  = new XMLHttpRequest();
+request.open("Git",https://restcountries.com/v3.1/all);
+request.send ();
+request.onload=function(){
+    var result =JSON.parse(request.response);
+    console.log(result);
+    for (var i=0;i<result.length, i++){
+        var subregions = result[i].subregions;
+        console.log(subregions)
+    }
+}
+
+
+
+Question no 3.2 ;
+console.log(populasions);
+
+
+var request  = new XMLHttpRequest();
+request.open("Git",https://restcountries.com/v3.1/all);
+request.send ();
+request.onload=function(){
+    var result =JSON.parse(request.response);
+    console.log(result);
+    for (var i=0;i<result.length, i++){
+        var populations = result[i].populations;
+        console.log(populations)
+    }
+}
+
+
+
+
+
+
+
